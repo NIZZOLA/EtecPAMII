@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-item>
+    <ion-label>Tipo de Despesa</ion-label>
+    <ion-select>
+      <ion-select-option value="C">Combustivel</ion-select-option>
+      <ion-select-option value="A">Agua</ion-select-option>
+      <ion-select-option value="L">Luz</ion-select-option>
+      <ion-select-option value="T">Telefone</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Descrição</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-textarea placeholder="preencha com mais informações..."></ion-textarea>
+  </ion-item>
+
+  <ion-list>
+    <ion-radio-group value="biff">
+      <ion-list-header>
+        <ion-label>Status do pagamento</ion-label>
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label>A Pagar</ion-label>
+        <ion-radio value="A"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Pago</ion-label>
+        <ion-radio value="P"></ion-radio>
+      </ion-item>
+
+    </ion-radio-group>
+  </ion-list>
+
+  <ion-item>
+    <ion-label>Vencimento</ion-label>
+    <ion-datetime displayFormat="DD/MM/YYYY" value="2019-10-01T15:43:40.394Z" display-timezone="utc"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Valor a pagar</ion-label>
+    <ion-input type="number" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Pagamento</ion-label>
+    <ion-datetime displayFormat="DD/MM/YYYY" value="" display-timezone="utc"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Valor pago</ion-label>
+    <ion-input type="number" ></ion-input>
+  </ion-item>
+
+  <ion-button>Salvar</ion-button>
+</ion-content>
